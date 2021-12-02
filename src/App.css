@@ -1,0 +1,141 @@
+body {
+    background-color: #eee;
+}
+
+/*div {*/
+/*    margin: 10% auto;*/
+/*}*/
+/* Базовые стили */
+.heart {
+    position: relative;
+    width: 27px;
+    height: 42px;
+    background-color: white;
+    box-shadow: -2px 0px 2px #444;
+    /* Скругляем верхние углы */
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    /* Определяем угол наклона */
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+    margin: 20px;
+}
+
+/* Формируем правую часть */
+.heart:before {
+    position: absolute;
+    width: 42px;
+    height: 27px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: white;
+    box-shadow: 0px 3px 3px #444444;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+
+}
+
+/* Убираем тень при наведении */
+.heart:hover:before, .heart:hover {
+    box-shadow: none;
+}
+
+/*div {*/
+/*    margin: 10% auto;*/
+/*}*/
+
+.heart__like {
+    position: relative;
+    width: 27px;
+    height: 42px;
+    background-color: red;
+    box-shadow: -1px 0px 2px #444;
+    /* Скругляем верхние углы */
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    /* Определяем угол наклона */
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Формируем правую часть */
+.heart__like:before {
+    position: absolute;
+    width: 42px;
+    height: 27px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: red;
+    box-shadow: 0px 3px 3px #444444;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+
+}
+
+/* Убираем тень при наведении */
+.heart:hover:before, .heart:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.img__border {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img__position {
+    position: relative;
+    cursor: pointer;
+}
+
+header {
+    background-color: darkcyan;
+    color: #eeeeee;
+    height: 55px;
+}
+
+.comment {
+    background: white;
+    padding: 15px;
+    border: #444444 1px;
+}
+
+.modal__img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    cursor: pointer;
+}
+
+.image-image__background {
+    background-color: cadetblue;
+}
